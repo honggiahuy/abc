@@ -28,14 +28,84 @@ body{
 .title{
     z-index: 1;
     color: #FFFAEF;
-    font-size: 60px;
+    font-size: 80px;
+}
+.buttonarrow{
+    z-index: 1;
+    color: #1A5908;
+    font-size: 20px;
+    border: 1px solid #1A5908;
+    padding: 5px 20px;
+    border-radius: 50%;
+    margin-top: 0px;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+}
+.buttonarrow::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1A5908;
+    left: 0%;
+    top: 100%;
+    transition: all 0.3s ease;
+}
+.bingxue:hover .buttonarrow::after{
+    top: 0%;
+}
+.buttonarrow::before{
+    position: absolute;
+    content: "→";
+    color: #FFFAEF;
+    top: -75%;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+.bingxue:hover .buttonarrow::before{
+    top:4px;  
+}
+.nen-2:has(.improve:hover){
+    background-color:rgba(255, 166, 0, 0.274);
+}
+.nen-2:has(.reduce:hover){
+    background-color: rgba(255, 160, 122, 0.459);
+}
+.bingxue{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding:40px 0px;
+    border-bottom: 1px solid #1A5908;
+}
+.divinthree{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subTitlehover{
+    font-size: 90px;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    transition: all 0.3s ease;
+}
+.bingxue:hover .subTitlehover {
+    transform: skewX(-20deg);
+}
+.protectbutton{
+    width: 20%;
+    display: flex;
+    justify-content: end;
 }
 .button{
     z-index: 1;
     color: #1A5908;
-    font-size: 20px;
+    font-size: 25px;
     background-color: #FFCE70;
-    padding: 10px 20px;
+    padding: 17px 30px;
     border-radius: 50%;
     margin-top: 20px;
     position: relative;
@@ -63,6 +133,266 @@ body{
     transition: all 0.6s ease;
 }
 .button:hover::before{
-    top:9px;
+    top:15px;  
+}
+.thefiberofourbeing{
+    background-color: #FFCE70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    height: 95vh;
+}    
+.gifvideo video{
+    height: 100%;
+}
+.gifvideo{
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    border-radius: 35px;
+}
+.mainright{
+    color: #1A5908;
+    width: 700px;
+    height: 700px;
+}
+.maintitle{
+    font-size: 70px;
+}
+.subtitle{
+    font-size: 22px;
+}
+.ourscience{
+    font-size: 30px;
+    transition: all;
+    display: inline-block;
+    position: relative;
+}
+.ourscience::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #1A5908;
+    bottom: 0%;
+    left: 0%;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+.ourscience:hover::after{
+    opacity: 1;
+}
+.ourscienceandarrow{
+    display: flex;
+}
+.arrow{
+    font-size: 30px;
+}
+.gay{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.pictureoflong img{
+    width: 350px;
+}
+.mainright{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.nen{
+    background-color: #FFFAEF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.meetthefl{
+    font-size: 70px;
+    color: #1A5908;
+    text-align: center;
+    margin-top: 20px;
+}
+.textcenter{
+    text-align: center;
+
+}
+.fourpicreveal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 50px;
+}
+.imgcontainer-t{
+    width: 340px;
+    height: 460px;
+    background-color: #F5F0E0;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+
+}
+.t1{
+    width: 340px;
+    overflow: hidden;
+    text-align: center;
     
+}
+.quietnice1{
+    width: 80%;
+}
+.quietnice2{
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.textcenter{
+    margin-top: 120px;
+}
+.sub1{
+    font-size: 22px;
+}
+.t1:hover .quietnice2{
+    opacity: 1;
+}
+.t1:hover .sub1{
+    text-decoration: underline;
+}
+.nen-2{
+    background-color: #FFFAEF;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1A5908;
+    transition: all 0.3s ease;
+}
+.quietnicecan{
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+.thefiber-rich{
+    background-color: #2F4231;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.text-center{
+    color: #B2D99A;
+    font-size: 76px;
+    text-align: center;
+    display: inline;
+    justify-content: center;
+}
+.text-center img{
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+}
+.chuchay{
+    background-color: #B2D99A;
+    color: #1A5908;
+    padding: 10px 0px;
+    border-bottom: 1px solid #1A5908;
+    font-size: 20px;
+    overflow: hidden;
+
+}
+.cay{
+    margin-top:60px ;
+}
+.chay{
+    display: flex;
+    gap: 60px;
+    width: max-content;
+    animation: run 12s linear infinite;
+    
+}
+.chay1{
+    display: flex;
+    gap: 60px;
+}
+.quietnicecan{
+    font-size:20px;
+}
+@keyframes run {
+    0%{
+        transform: translateX(-50%);
+    
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+@media (max-width: 768px){
+    .thefiberofourbeing{
+        flex-direction: column-reverse;
+        gap:0px;
+        padding-top:20px ;
+    }
+    .gifvideo{
+        width: 85%;
+        margin-bottom: 40px;
+    }
+    .mainright{
+        width: 90%;
+    }
+    .maintitle{
+        font-size: 43px;
+        text-align: center;
+        
+    }
+    .subtitle{
+        text-align: center;
+    }
+    .ourscience{
+        text-align: center;
+        border: 1px solid #1A5908;
+        padding: 3px 6px;
+        border-radius: 20px;
+        background-color: #1A5908;
+        color: #FFCE70;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.548)
+    }
+    .ourscienceandarrow{
+        justify-content: center;
+    }
+    .arrow{
+        opacity: 0;
+        width: 0;
+    }
+    .ourscience:hover::after{
+        opacity: 0;
+    
+    }
+    .pictureoflong{
+        justify-content: center;
+        display: flex;
+    }
+    .fourpicreveal{
+        flex-direction: column;
+    }
+    .sub1{
+        font-size: 25px;
+    }
+    .imgcontainer-t{
+        margin-bottom: 8px;
+        margin-top: 20px;
+    }
 }
