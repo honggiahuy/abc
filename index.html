@@ -4,11 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiet Nice: Prebiotic Oatmeal </title>
+    <title>Quiet Nice: Prebiotic Oatmeal with</title>
     <link rel="stylesheet" href="quietnice.css">
 </head>
 
 <body>
+    <div class="taskbar" id="khochuhu">
+        <div class="taskbar-1 anhlongmabgiang" id="longmabacgiang" onclick="truot()">Menu</div>
+        <div class="kidtask-1">
+            <div class="taskbar-1">
+                Try Now
+            </div>
+            <div class="taskbar-2">
+                Our Science
+            </div>
+        </div>
+        
+        <div class="taskbar-3">
+            <img class="logotaskbar" id="greenlogo" src="./StockWebsite/qnice.png" alt="ERROR">
+            <img class="logotaskbar" id="whitelogo" src="./StockWebsite/qniceF5F0E0.png" alt="ERROR">
+        </div>
+        <div class="taskbar-5 anhlongmabgiang"> Cart (0)</div>
+        <div class="kidtask-2">
+            <div class="taskbar-4">
+                Account
+            </div>
+            <div class="taskbar-5">
+                Cart (0)
+            </div>
+        </div>   
+    </div>
+    <div class="minisidebar" id="thanhhoa">
+        <div id="minisidebarfont">Try Now</div>
+        <div id="minisidebarfont">Our Science</div>
+        <div id="minisidebarfont">Account</div>
+    </div>
     <div class="container">
         <div class="title">
             The Easy Breakfast <br>
@@ -23,7 +53,8 @@
         <span class="text-center">The fiber-rich <img src="./StockWebsite/1_300x.webp" alt=""> for protein-fortified
             <img src="./StockWebsite/2_300x.webp" alt=""> for prebiotic oatmeal that supports <img
                 src="./StockWebsite/3_300x.webp" alt=""> for digestion, regularity, and gut health <img
-                src="./StockWebsite/4_300x.webp" alt="" class=""> </span>
+                src="./StockWebsite/4_300x.webp" alt="" class=""> 
+        </span>
         <div class="button">
             Get Started
         </div>
@@ -139,7 +170,7 @@
     </div>
     
     <div class="nen-2">
-        <span class="quietnicecan">Quite Nice Can</span>
+        <span class="quietnicecan">QUIET NICE CAN</span>
         <div class="divinthree">
             <div class="support bingxue">
                 <div class="subTitlehover">
@@ -175,8 +206,35 @@
         <div class="button cay">
             Get Started
         </div>
-
     </div>
+    <script>
+        function truot (){
+            let a = document.getElementById('khochuhu');
+            let b = document.getElementById('longmabacgiang');
+            let c = document.getElementById('thanhhoa');
+            let d = document.getElementById('greenlogo')
+            let e = document.getElementById('whitelogo')
+
+            console.log(b.textContent);
+            
+            if (b.textContent == "Menu"){
+                a.style.backgroundColor ='#2F4231';
+                a.style.color = '#B2D99A';
+                b.innerHTML = 'Close';
+                c.style.left = '0%';
+                d.style.display = 'none';
+                e.style.display = 'inline';
+
+            }else{
+                a.style.backgroundColor ='#FFFAEF';
+                a.style.color = '#1A5908';
+                b.innerHTML = 'Menu';
+                c.style.left = '130%';
+                e.style.display = 'none';
+                d.style.display = 'inline';
+            } 
+        }
+    </script>
 </body>
 
 </html>

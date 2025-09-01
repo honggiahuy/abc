@@ -1,5 +1,41 @@
 body{
     margin: 0px;
+    overflow-x:hidden;
+}
+#whitelogo{
+    display: none;
+}
+.logotaskbar{
+    height: 80px;
+}
+.taskbar-1{
+    margin-left: 20px;
+}
+.taskbar-5{
+    margin-right: 27px;
+}
+.kidtask-1{
+    display: flex;
+    gap:30px
+}
+.kidtask-2{
+    display: flex;
+    gap:30px
+}
+.taskbar{
+    display: flex;
+    color: #1A5908;
+    min-width: 100vw;
+    height: 70px;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    background-color: #F5F0E0;
+    font-size: 21px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #2F4231;
 }
 .container{
     position: relative;
@@ -86,7 +122,7 @@ body{
     align-items: center;
 }
 .subTitlehover{
-    font-size: 90px;
+    font-size: 80px;
     text-align: center;
     justify-content: center;
     width: 80%;
@@ -110,6 +146,7 @@ body{
     margin-top: 20px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 .button::after{
     content: "";
@@ -119,7 +156,7 @@ body{
     background-color: #1A5908;
     left: 0%;
     top: 100%;
-    transition: all 0.7s ease;
+    transition: all 0.5s ease;
 }
 .button:hover::after{
     top: 0%;
@@ -130,7 +167,7 @@ body{
     color: #FFCE70;
     top: -75%;
     z-index: 1;
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
 }
 .button:hover::before{
     top:15px;  
@@ -208,6 +245,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 80px 30px 80px;
 }
 .meetthefl{
     font-size: 70px;
@@ -271,7 +309,7 @@ body{
 }
 .nen-2{
     background-color: #FFFAEF;
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -294,10 +332,11 @@ body{
 }
 .text-center{
     color: #B2D99A;
-    font-size: 76px;
+    font-size: 70px;
     text-align: center;
     display: inline;
     justify-content: center;
+    padding: 20px 40px 8px 40px;
 }
 .text-center img{
     display: inline;
@@ -328,7 +367,23 @@ body{
     gap: 60px;
 }
 .quietnicecan{
-    font-size:20px;
+    font-size: 20px;
+}
+.minisidebar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #2F4231;
+    color: #B2D99A;
+    position: fixed;
+    right: -130% ;
+    transition: all 0.6s ease;
+    z-index: 5;
+
+}
+.anhlongmabgiang{
+    display: none;
+    cursor: pointer;
 }
 @keyframes run {
     0%{
@@ -341,6 +396,25 @@ body{
     
 }
 @media (max-width: 768px){
+    .text-center img{
+        width: 60px ;
+        height: 60px;
+    }
+    .nen{
+        padding: 0px 80px 80px 80px;
+    }
+    .text-center{
+        font-size: 80px;
+    }
+    .anhlongmabgiang{
+        display: flex;
+    }
+    .kidtask-1{
+        display: none;
+    }
+    .kidtask-2{
+        display: none;
+    }
     .thefiberofourbeing{
         flex-direction: column-reverse;
         gap:0px;
